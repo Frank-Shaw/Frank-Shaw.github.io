@@ -161,7 +161,7 @@
 	        growSpeed: 1500 / 60,
 	        color: {
 				rmin: 128,
-				rmax: 255,
+				rmax: 192,
 				gmin: 0,
 				gmax: 128,
 				bmin: 0,

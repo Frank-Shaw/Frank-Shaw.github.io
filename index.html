@@ -33,10 +33,9 @@
 				<span class="space"/><span class="comments">* I hope you will like it.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
 				<span class="define">module</span> HappyBirthday(<br />
-				<span class="define">input</span> <span class="keyword">wire </span>[∞:0] time,<br />
-				<span class="define">output</span> <span class="keyword">wire </span>[4:0] age<br />
+				<span class="tab"/><span class="define">input</span> <span class="keyword">wire </span>[∞:0] time,<br />
+				<span class="tab"/><span class="define">output</span> <span class="keyword">wire </span>[4:0] age<br />
 				);</br>
-				<span class="define">Girl</span> u = <span class="keyword">new</span> Girl(<span class="string">"小笨蛋"</span>);<br />
 				<span class="define">Girl</span> u = <span class="keyword">new</span> Girl(<span class="string">"小笨蛋"</span>);<br />
 				<span class="comments">// You are always lovely and energatic</span><br />
 				u.attr = <span class="string">"Angle"</span>;<br />
@@ -49,15 +48,15 @@
 				}</br>
 				<span class="comments">// Our blessing will be with you simultaneously.</span><br />
 				<span class="keyword">reg</span> Thread (){<br />
-				<span class="tab"/><span class="keyword">@Override</span> </br>
+				<span class="tab"/><span class="define">@Override</span> </br>
 				<span class="tab"/><span class="comments">// Forever and ever. I wish</span><br />
-				<span class="tab"/><span class="define">always</span> @*<span class="define"> begin</span></br>
+				<span class="tab"/><span class="define">always @*</span><span class="keyword"> begin</span></br>
 				<span class="tab"/><span class="comments">// luckiness,</span><br />
 				<span class="tab"/>u.fortune ++;</br>
 				<span class="tab"/><span class="comments">// happiness,</span><br />
 				<span class="tab"/>u.happiness ++;</br>
 			    <span class="tab"/><span class="comments">// and everything you wish can be achieved.</span><br />
-				<span class="keyword">end</span></br>
+				<span class="tab"/><span class="keyword">end</span></br>
 				<span class="tab"/><span class="comments">// The last thing I wanna say, boring and ordinary, is:</span><br />
 				<span class="tab"/><span class="keyword">assign</span> System.out.<span class="func">println</span>(<span class="string">"生日快乐 !"</span>);</br>
 				<span class="tab"/><span class="keyword">assign</span> System.out.<span class="func">println</span>(<span class="string">"Happy Birthday !"</span>);</br>
@@ -74,7 +73,7 @@
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						May you have a year full of happiness.<br/>
+						<br/>May you have always full of happiness.<br/>
 						<div class="signature">- Frank Shaw</div>
 					</div>
 				</div>
@@ -114,7 +113,7 @@
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 2000);
+			}, 75000);
 
 			timeElapse(together);
 			setInterval(function () {
