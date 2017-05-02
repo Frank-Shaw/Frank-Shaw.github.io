@@ -14,6 +14,7 @@ body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
 #code .keyword{color:#FF99FF;font-weight:bold}
 #code .comments{color:#0033CC}
 #code .func{color:#FF99FF}
+#code .number{color:#BF3EFF}
 #code .define{color:#00B050;font-style:italic}
 #code .placeholder{margin-left:15px}
 #code .space{margin-left:7px}
